@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>陈鱼眠 · 个人主页</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="paper-texture"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="返回首页"><span class="brand-mark">CY</span><span>CHEN YUMIAN</span></a>
+    <nav class="nav" aria-label="页面导航">
+      <button class="nav-link active" data-page="home" data-i18n="nav.home">首页</button>
+      <button class="nav-link" data-page="story" data-i18n="nav.story">关于我</button>
+      <button class="nav-link" data-page="gallery" data-i18n="nav.gallery">影集</button>
+      <button class="nav-link" data-page="notes" data-i18n="nav.notes">随笔</button>
+    </nav>
+    <button class="lang-switch" id="langSwitch" aria-label="Switch language"><span>中</span><i></i><span>EN</span></button>
+  </header>
+
+  <main>
+    <section class="page active" id="home">
+      <div class="home-layout">
+        <div class="intro-copy">
+          <p class="eyebrow" data-i18n="home.eyebrow">PERSONAL ARCHIVE · 2026</p>
+          <h1 data-i18n-html="home.title">你好，我是<br><em>陈鱼眠</em></h1>
+          <p class="lead" data-i18n="home.lead">在这里，收集成长的片段、想法与那些值得记住的日常。</p>
+          <div class="profile-line"><span data-i18n="home.genderLabel">性别</span><b data-i18n="home.gender">女</b><span class="line-dot">·</span><span data-i18n="home.location">中国</span></div>
+          <button class="rounded-link" data-go="story"><span data-i18n="home.explore">认识更多</span> <b>↗</b></button>
+        </div>
+        <div class="hero-visual">
+          <div class="sun"></div><div class="arch arch-back"></div><div class="arch arch-front"></div>
+          <div class="hero-card">
+            <span class="card-label" data-i18n="home.cardLabel">ABOUT ME</span>
+            <strong>CY</strong>
+            <small data-i18n="home.cardText">正在书写</small>
+          </div>
+          <p class="vertical-note" data-i18n="home.vertical">慢慢来，比较快。</p>
+        </div>
+      </div>
+      <div class="scroll-hint"><span></span><span data-i18n="home.scroll">向下探索</span></div>
+    </section>
+
+    <section class="page" id="story">
+      <div class="section-heading"><p class="eyebrow">01 / PROFILE</p><h2 data-i18n="story.heading">关于我</h2><p data-i18n="story.subheading">那些塑造我的，小小的经历。</p></div>
+      <div class="story-grid">
+        <article class="bio-card"><p class="tiny-label" data-i18n="story.identity">身份</p><h3 data-i18n="story.name">陈鱼眠</h3><div class="bio-meta"><span data-i18n="story.female">女性</span><span>·</span><span data-i18n="story.placeholder">更多信息待补充</span></div><p class="bio-text" data-i18n="story.bio">这是留给未来自己的空白页。你可以在这里写下喜欢的事物、性格、目标，或任何想被记住的自己。</p></article>
+        <div class="education"><p class="tiny-label" data-i18n="story.education">教育经历</p>
+          <div class="timeline">
+            <div class="timeline-item"><span>01</span><div><h4 data-i18n="edu.primary">小学</h4><p data-i18n="edu.primarySchool">厦门外国语附属小学</p></div></div>
+            <div class="timeline-item"><span>02</span><div><h4 data-i18n="edu.middle">初中</h4><p data-i18n="edu.middleSchool">厦门外国语学校（思明校区）</p></div></div>
+            <div class="timeline-item"><span>03</span><div><h4 data-i18n="edu.high">高中</h4><p data-i18n="edu.highSchool">厦门外国语学校（海沧校区）</p></div></div>
+            <div class="timeline-item"><span>04</span><div><h4 data-i18n="edu.university">大学</h4><p data-i18n="edu.universitySchool">上海交通大学</p></div></div>
+          </div>
+        </div>
+        <article class="award-card"><div class="sparkle">✦</div><p class="tiny-label" data-i18n="story.awards">获奖情况</p><h3 data-i18n="story.awardTitle">荣誉与闪光</h3><p data-i18n-html="story.awardCopy">2026年“新生杯”最佳辩手<br>2026年“体总杯”羽毛球团体赛第五名<br>2026年上海半程马拉松志愿者<br>2026年外研社·国才杯综合能力赛项银奖</p></article>
+      </div>
+    </section>
+
+    <section class="page" id="gallery">
+      <div class="section-heading gallery-heading"><p class="eyebrow">02 / MOMENTS</p><h2 data-i18n="gallery.heading">影集</h2><p data-i18n="gallery.subheading">把平凡的日子，收进相框。</p></div>
+      <div class="masonry">
+        <figure class="photo photo-one"><img src="images/photo.jpg" alt="一只可爱的小狗" /><figcaption data-i18n="gallery.photo1">小狗的自由时刻</figcaption></figure>
+        <figure class="photo photo-two"><img src="images/2.jpg" alt="钟楼前的剪影" /><figcaption data-i18n="gallery.photo2">时间的窗口</figcaption></figure>
+        <figure class="photo photo-three"><img src="images/3.jpg" alt="博物馆里的雕像" /><figcaption data-i18n="gallery.photo3">凝望古典</figcaption></figure>
+        <figure class="photo photo-four"><img src="images/4.jpg" alt="校园上空的云" /><figcaption data-i18n="gallery.photo4">云落校园</figcaption></figure>
+      </div>
+      <p class="gallery-tip" data-i18n="gallery.tip">提示：将图片区域替换为自己的照片，即可更新影集。</p>
+    </section>
+
+    <section class="page" id="notes">
+      <div class="notes-wrap"><div class="section-heading"><p class="eyebrow">03 / NOTES</p><h2 data-i18n="notes.heading">随笔</h2><p data-i18n="notes.subheading">写给生活的一些小句子。</p></div>
+      <div class="notes-list">
+        <article class="note"><span>01</span><div><p class="note-date">01 / QUOTE</p><h3 data-i18n="notes.firstTitle">时间带我旅行，但我就是时间。</h3></div><b>↗</b></article>
+        <article class="note"><span>02</span><div><p class="note-date">02 / QUOTE</p><h3 data-i18n="notes.secondTitle">我给你一个从未拥有信仰之人的忠诚。</h3></div><b>↗</b></article>
+        <article class="note"><span>03</span><div><p class="note-date">03 / QUOTE</p><h3 data-i18n="notes.thirdTitle">时间是组成我的物质。</h3></div><b>↗</b></article>
+      </div></div>
+    </section>
+  </main>
+  <footer><span>© 2026 CHEN YUMIAN</span><span data-i18n="footer">PERSONAL CORNER</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
